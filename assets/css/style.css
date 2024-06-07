@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+#body.no-scroll {
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Disable interaction with overlay */
+}
+
+.overlay.active {
+    opacity: 0.6;
+    z-index: 0;
+    pointer-events: all; /* Enable interaction with overlay */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header{
+    margin: 0; 
+    background-image: url("../imgs/home.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    
+}
+.logo{
+    margin-top: 1rem;
+}
+.logo img, .logo-lateral img{
+    width: 12rem;
+}
+
+.menu li{
+    display: inline;
+    margin-left: 5rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu li:hover{
+    border-bottom:1px solid rgb(255, 208, 0);
+}
+
+.menu ul{
+    margin-left: 10rem;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu-navlateral{
+display: none;
+
+}
+
+#open_btn{
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+#side_items li{
+    display: none;
+    margin: 3rem 2rem;
+    color: rgb(43, 42, 42);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.logo-lateral img{
+    margin: 2rem;
+}
+.close-icon{
+    right: 10px;
+    margin-top: 2rem;
+    position: absolute;
+    cursor: pointer;
+    transition: width .6s;
+}
+#logo{
+    display: none;
+}
+
+#menu-lat.open-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background-color: #ffffff;
+    width: 18%;
+    height: 100vh;
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 8%;
+    opacity: 1;
+    transition: all .8s;
+}
+
+#menu-lat.open-menu #logo{
+    display:flex
+}
+#menu-lat.open-menu #side_items li{
+    display: block;
+    width: 100%;
+}
+
+#menu-lat.open-menu #side_items a{
+    text-decoration: none;
+}
+
+#menu-lat.open-menu #side_items li:hover{
+    border-bottom:2px solid rgb(173, 185, 2);
+    width: 30%;
+}
+
+#open_btn2{
+    display: none;
+    border: none;
+}
+
+#menu-lat.open-menu #open_btn2{
+    display: block;
+}
+#menu-lat.open-menu #open_btn2 i{
+    color: black;
+}
+#menu-lat.open-menu #open_btn2 i{
+    color: black;
+}
+
+main{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.planos {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.planos h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.planos p {
+    margin-top: 0.4rem;
+    text-align: center;
+}
+
+.planos li {
+    list-style: none;
+}
+
+.ul-planos {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.ul-planos > li {
+    margin: 0 10px;
+
+}
+
+.ul-planos ul {
+    list-style: none;
+    padding: 0;
+    padding: 1rem 2rem;
+}
+
+.ul-planos ul li {
+    border-top: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.ul-planos ul li:first-child {
+    border-top: none;
+}
+.teste{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.beneficios{
+    padding: 2rem 0;
+}
+
+.black{
+    border:2px solid #f5bc00;
+}
+
+.black-vantagem{
+    position: absolute;
+    top: -1rem;
+    left: 38%;
+    background-color: #f5bc00;
+    padding: 0.2rem;
+    border-radius: 10px ;
+    color: black;
+    font-size: 13px;
+}
+
+.fa-check{
+    color: green;
+}
+
+.fa-xmark{
+    color: red;
+}
+
+.btn-planos{
+    margin-top: 4rem;
+    padding: 0.8rem 6rem;
+}
+
+
+
