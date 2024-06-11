@@ -166,28 +166,38 @@ display: none;
 
 main{
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
+ }
+    
+main > section{
+    margin-top: 4rem;
+    text-align: center;
 }
 
+main h1{
+
+font-size: 30px;
+
+}    
+    
 .planos {
     position: relative;
     max-width: 100%;
     text-align: center;
-
+    
 }
 
 .planos h1 {
-    text-align: center;
-    font-size: 30px;
+    text-align: center;    
 }
 
 .planos p {
     margin-top: 0.4rem;
-    text-align: center;
+    text-align: center;    
 }
 
 .planos li {
-    list-style: none;
+    list-style: none;    
 }
 
 .ul-planos {
@@ -195,41 +205,41 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; 
+    position: relative;     
 }
 
 .ul-planos > li {
     margin: 0 10px;
-
+    
 }
 
 .ul-planos ul {
     list-style: none;
     padding: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem;    
 }
 
 .ul-planos ul li {
     border-top: 1px solid #ddd;
-    padding: 1rem;
+    padding: 1rem;    
 }
 
 .ul-planos ul li:first-child {
-    border-top: none;
+    border-top: none;    
 }
 .teste{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+        
 }
 .beneficios{
-    padding: 2rem 0;
+    padding: 2rem 0;    
 }
 
 .black{
-    border:2px solid #f5bc00;
+    border:2px solid #f5bc00;    
 }
 
 .black-vantagem{
@@ -240,15 +250,15 @@ main{
     padding: 0.2rem;
     border-radius: 10px ;
     color: black;
-    font-size: 13px;
+    font-size: 13px;    
 }
 
 .fa-check{
-    color: green;
+    color: green;    
 }
 
 .fa-xmark{
-    color: rgb(245, 50, 50);
+    color: rgb(245, 50, 50);    
 }
 
 .btn-planos{
@@ -257,15 +267,104 @@ main{
     border: none;
     background-color: rgb(223, 40, 40);
     border-radius: 10px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .btn-planos a{
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 17px;    
 }
 
+.att-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 320px);
+    align-items: center;
+    justify-content: center;
 
+
+}
+
+.item , .item-mais{
+    border-radius: 10px;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 2rem 2rem;
+    box-shadow: 0 3px 17px rgba(0,0,0,.1);
+    outline: 2px solid transparent;
+    user-select: none;
+}
+
+.item:hover,.item-mais:hover{
+    border: 2px solid #ffc917;
+}
+
+.att-grid img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:100%;
+    display: block;
+}
+
+.item-img h2{
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #e4b004;
+    padding: 0.625rem;
+}
+
+.item-duracao{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+
+}
+
+.item-duracao p{
+    font-size: 11px;
+    margin-top: 0.3rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.item-text p{
+    font-size: 12px;
+    text-align: left;
+    padding: 1rem;
+}
+
+.item-btn{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.item-mais h2{
+    margin-top: 0.6rem;
+    font-size: 18px;
+}
+
+.item-mais p{
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.item-mais button{
+    padding: 0.4rem 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer	;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    margin-bottom: 3.3rem;
+}
+
+.item-mais button:hover{
+    color: white;
+    background-color: black;
+}
 
