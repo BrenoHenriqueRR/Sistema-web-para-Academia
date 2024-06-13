@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -21,80 +21,86 @@
     opacity: 0;
     z-index: 999;
     transition: opacity 0.3s;
-    pointer-events: none; /* Disable interaction with overlay */
+    pointer-events: none;
+    /* Disable interaction with overlay */
 }
 
 .overlay.active {
     opacity: 0.6;
     z-index: 0;
-    pointer-events: all; /* Enable interaction with overlay */
+    pointer-events: all;
+    /* Enable interaction with overlay */
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
-header{
-    margin: 0; 
+header {
+    margin: 0;
     background-image: url("../imgs/home.png");
     background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100vw;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
-    
+
 }
-.logo{
+
+.logo {
     margin-top: 1rem;
 }
-.logo img, .logo-lateral img{
+
+.logo img,
+.logo-lateral img {
     width: 12rem;
 }
 
-.menu li{
+.menu li {
     display: inline;
     margin-left: 5rem;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
-.menu li:hover{
-    border-bottom:1px solid rgb(255, 208, 0);
+
+.menu li:hover {
+    border-bottom: 1px solid rgb(255, 208, 0);
 }
 
-.menu ul{
+.menu ul {
     margin-left: 10rem;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
 }
 
-.menu-navlateral{
-display: none;
+.menu-navlateral {
+    display: none;
 
 }
 
-#open_btn{
+#open_btn {
     color: white;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    
+
 }
 
 
-#side_items li{
+#side_items li {
     display: none;
     margin: 3rem 2rem;
     color: rgb(43, 42, 42);
@@ -103,21 +109,23 @@ display: none;
 
 }
 
-.logo-lateral img{
+.logo-lateral img {
     margin: 2rem;
 }
-.close-icon{
+
+.close-icon {
     right: 10px;
     margin-top: 2rem;
     position: absolute;
     cursor: pointer;
     transition: width .6s;
 }
-#logo{
+
+#logo {
     display: none;
 }
 
-#menu-lat.open-menu{
+#menu-lat.open-menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -132,72 +140,75 @@ display: none;
     transition: all .8s;
 }
 
-#menu-lat.open-menu #logo{
-    display:flex
+#menu-lat.open-menu #logo {
+    display: flex
 }
-#menu-lat.open-menu #side_items li{
+
+#menu-lat.open-menu #side_items li {
     display: block;
     width: 100%;
 }
 
-#menu-lat.open-menu #side_items a{
+#menu-lat.open-menu #side_items a {
     text-decoration: none;
 }
 
-#menu-lat.open-menu #side_items li:hover{
-    border-bottom:2px solid rgb(173, 185, 2);
+#menu-lat.open-menu #side_items li:hover {
+    border-bottom: 2px solid rgb(173, 185, 2);
     width: 30%;
 }
 
-#open_btn2{
+#open_btn2 {
     display: none;
     border: none;
 }
 
-#menu-lat.open-menu #open_btn2{
+#menu-lat.open-menu #open_btn2 {
     display: block;
 }
-#menu-lat.open-menu #open_btn2 i{
-    color: black;
-}
-#menu-lat.open-menu #open_btn2 i{
+
+#menu-lat.open-menu #open_btn2 i {
     color: black;
 }
 
-main{
+#menu-lat.open-menu #open_btn2 i {
+    color: black;
+}
+
+main {
     margin-top: 4rem;
     /* margin-bottom: 4rem; */
- }
-    
-main > section{
+}
+
+main>section {
     margin-top: 4rem;
     text-align: center;
 }
 
-main h1{
+main h1 {
 
-font-size: 30px;
+    font-size: 30px;
 
-}    
-    
+}
+
 .planos {
     position: relative;
     max-width: 100%;
     text-align: center;
-    
+
 }
 
 .planos h1 {
-    text-align: center;    
+    text-align: center;
 }
 
 .planos p {
     margin-top: 0.4rem;
-    text-align: center;    
+    text-align: center;
 }
 
 .planos li {
-    list-style: none;    
+    list-style: none;
 }
 
 .ul-planos {
@@ -205,79 +216,81 @@ font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;     
+    position: relative;
 }
 
-.ul-planos > li {
+.ul-planos>li {
     margin: 0 10px;
-    
+
 }
 
 .ul-planos ul {
     list-style: none;
     padding: 0;
-    padding: 1rem 2rem;    
+    padding: 1rem 2rem;
 }
 
 .ul-planos ul li {
     border-top: 1px solid #ddd;
-    padding: 1rem;    
+    padding: 1rem;
 }
 
 .ul-planos ul li:first-child {
-    border-top: none;    
+    border-top: none;
 }
-.teste{
+
+.teste {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-        
-}
-.beneficios{
-    padding: 2rem 0;    
+
 }
 
-.black{
-    border:2px solid #f5bc00;    
+.beneficios {
+    padding: 2rem 0;
 }
 
-.black-vantagem{
+.black {
+    border: 2px solid #f5bc00;
+}
+
+.black-vantagem {
     position: absolute;
     top: -1rem;
     left: 38%;
     background-color: #f5bc00;
     padding: 0.2rem;
-    border-radius: 10px ;
+    border-radius: 10px;
     color: black;
-    font-size: 13px;    
+    font-size: 13px;
 }
 
-.fa-check{
-    color: green;    
+.fa-check {
+    color: green;
 }
 
-.fa-xmark{
-    color: rgb(245, 50, 50);    
+.fa-xmark {
+    color: rgb(245, 50, 50);
 }
 
-.btn-planos{
+.btn-planos {
     margin-top: 4rem;
     padding: 0.8rem 6rem;
     border: none;
     background-color: rgb(223, 40, 40);
     border-radius: 10px;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.btn-planos a{
+.btn-planos a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: 17px;    
+    font-size: 17px;
 }
 
-.att-grid{
+.att-grid {
     display: grid;
     grid-template-columns: repeat(4, 320px);
     align-items: center;
@@ -286,35 +299,37 @@ font-size: 30px;
 
 }
 
-.item , .item-mais{
+.item,
+.item-mais {
     border-radius: 10px;
     font-size: 1.25em;
     font-weight: normal;
     margin: 2rem 2rem;
-    box-shadow: 0 3px 17px rgba(0,0,0,.1);
+    box-shadow: 0 3px 17px rgba(0, 0, 0, .1);
     outline: 2px solid transparent;
     user-select: none;
 }
 
-.item:hover,.item-mais:hover{
+.item:hover,
+.item-mais:hover {
     border: 2px solid #ffc917;
 }
 
-.att-grid img{
+.att-grid img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width:100%;
+    width: 100%;
     display: block;
 }
 
-.item-img h2{
+.item-img h2 {
     font-size: 14px;
     text-transform: uppercase;
     background-color: #e4b004;
     padding: 0.625rem;
 }
 
-.item-duracao{
+.item-duracao {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 50% 30%;
@@ -322,81 +337,122 @@ font-size: 30px;
 
 }
 
-.item-duracao p{
+.item-duracao p {
     font-size: 11px;
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
-    
+
 }
 
-.item-text p{
+.item-text p {
     font-size: 12px;
     text-align: left;
     padding: 1rem;
 }
 
-.item-btn{
+.item-btn {
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 4rem;
     cursor: pointer;
 }
 
-.item-mais h2{
+.item-mais h2 {
     margin-top: 0.6rem;
     font-size: 18px;
 }
 
-.item-mais p{
+.item-mais p {
     font-size: 14px;
     padding: 1rem;
 }
 
-.item-mais button{
+.item-mais button {
     padding: 0.4rem 2rem;
     border: 2px solid black;
     border-radius: 10px;
-    cursor: pointer	;
+    cursor: pointer;
     font-size: 12px;
     font-weight: 600;
     background-color: white;
     margin-bottom: 5.2rem;
 }
 
-.item-mais button:hover{
+.item-mais button:hover {
     color: white;
     background-color: black;
 }
 
+#aplicativo {
+    background-color: #fff0d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 6rem;
+}
 
+.app-text {
+    color: #333;
+    text-align: left;
+}
 
+.app-text h2 {
+    margin-bottom: 1rem;
+    font-size: 35px;
+}
 
+.app-text li {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 15px;
+}
 
+.app-text p {
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img-app{
+    position: relative;
+}
 
+.img-app div {
+    background-color: #e4b004;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;    
+    z-index: 2;
+}
 
-
+.img-app img{
+    position: relative; 
+  z-index: 2;
+}
 
 
 @media screen and (max-width: 1238px) {
-    .att-grid{
+    .att-grid {
         grid-template-columns: repeat(3, 260px) 290px;
     }
 }
+
 @media screen and (max-width: 1108px) {
-    .menu{
+    .menu {
         display: none;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .att-grid{
+    .att-grid {
         grid-template-columns: repeat(2, 300px)
     }
 }
 
 
 @media screen and (max-width: 562px) {
-    .att-grid{
+    .att-grid {
         grid-template-columns: repeat(1, 400px);
     }
 }
