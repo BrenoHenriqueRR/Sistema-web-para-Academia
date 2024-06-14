@@ -29,7 +29,6 @@
     opacity: 0.6;
     z-index: 0;
     pointer-events: all;
-    /* Enable interaction with overlay */
 }
 
 body {
@@ -180,7 +179,8 @@ main {
     /* margin-bottom: 4rem; */
 }
 
-main>section {
+main > section,
+footer > section {
     margin-top: 4rem;
     text-align: center;
 }
@@ -295,8 +295,13 @@ main h1 {
     grid-template-columns: repeat(4, 320px);
     align-items: center;
     justify-content: center;
+}
 
-
+.att-flex{
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    align-items: center;
+    justify-content: center;
 }
 
 .item,
@@ -315,7 +320,7 @@ main h1 {
     border: 2px solid #ffc917;
 }
 
-.att-grid img {
+.att-grid img,.att-flex img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
@@ -416,15 +421,7 @@ main h1 {
     position: relative;
 }
 
-.img-app div {
-    background-color: #e4b004;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;    
-    z-index: 2;
-}
+
 
 .img-app img{
     position: relative; 
