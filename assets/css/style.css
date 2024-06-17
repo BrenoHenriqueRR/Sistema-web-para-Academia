@@ -22,7 +22,6 @@
     z-index: 999;
     transition: opacity 0.3s;
     pointer-events: none;
-    /* Disable interaction with overlay */
 }
 
 .overlay.active {
@@ -106,6 +105,17 @@ header {
     font-size: 20px;
     font-weight: 600;
 
+}
+
+.promocao{
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: rgb(223, 40, 40);
+    border-radius: 15px;
+}
+
+.promocao:hover{
+    background-color: black;
 }
 
 .logo-lateral img {
