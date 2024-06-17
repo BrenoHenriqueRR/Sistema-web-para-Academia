@@ -4,7 +4,8 @@
     padding: 12rem 0;
     background-color: black;
     margin-bottom: 5rem;
-    color: white; /* Para garantir que o texto fique visível */
+    color: white;
+    /* Para garantir que o texto fique visível */
 }
 
 .bg-sobrenos .flex {
@@ -23,3 +24,50 @@
     justify-content: center;
 }
 
+.flex h1 {
+    text-shadow: 1px 1px 3px black;
+}
+
+.sobrenos h1 {
+    font-size: 35px;
+    margin-left: 5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.sobrenos>p {
+    font-size: 16px;
+    margin-left: 5rem;
+    width: 50%;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.p-line {
+    padding: 15px 20px;
+    margin-left: 10%;
+    border-left: 3px solid black;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-sobre img{
+    width: 30rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.img-sobre img:hover {
+    transform: scale(1.1);
+  }
+
+  .ampliar {
+    transform: scale(1.1);
+  }
