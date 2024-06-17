@@ -39,7 +39,31 @@
 #form-promocao{
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form-promocao div {
+    display: grid;
+    grid-template-columns: calc(4 * 100px);
+}
+
+.input-form{
+    border: none;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#form-promocao div button {
+    padding: 0.5rem 0;
+    border: none;
+    background-color: rgb(223, 40, 40);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
 }
