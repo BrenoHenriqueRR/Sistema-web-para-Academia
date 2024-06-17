@@ -1,0 +1,45 @@
+.bg-promocao {
+    position: relative;
+    text-align: center;
+    padding: 12rem 0;
+    background-color: black;
+    margin-bottom: 5rem;
+    color: white; /* Para garantir que o texto fique visível */
+}
+
+.bg-promocao .flex {
+    content: "";
+    background-image: url("../imgs/promocao.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-promocao{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-promocao h1{
+    text-align: center;
+    padding:0.3rem 1rem;
+    border-radius: 10px;
+    background-color: rgb(226, 185, 0);
+}
+
+#form-promocao{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
