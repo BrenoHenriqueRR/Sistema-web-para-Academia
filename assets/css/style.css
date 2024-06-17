@@ -137,6 +137,7 @@ header {
     border-bottom-left-radius: 8%;
     opacity: 1;
     transition: all .8s;
+    z-index: 2;
 }
 
 #menu-lat.open-menu #logo {
