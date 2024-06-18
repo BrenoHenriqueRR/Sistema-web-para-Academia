@@ -15,27 +15,34 @@
     width: 15rem;
 }
 
-
-.d-flex {
+.fundo{
     display: flex;
-    justify-content: center;
-    padding: 1.3rem;
-    gap: 1.3rem;
-
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
 }
 
-.form {
-    flex: 1;
-    max-width: 40%; 
-    margin: 0 auto; 
-    padding: 20px; 
+
+.d-flex {
+    width: 70%;
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    padding: 1.3rem;
+    border: 1px solid #f1f1f1; 
     border-radius: 10px; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.form {
+    padding: 2rem; 
+    width: 70%;
+}
+
 .form h1 {
     text-align: center; 
-    margin-bottom:1.2rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
 }
 
 .form p {
@@ -49,9 +56,10 @@
     width: 100%; 
     padding: 0.625rem; 
     margin: 0.3rem 0; 
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 5px;
     box-sizing: border-box; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .genero {
@@ -67,14 +75,10 @@
 }
 
 .preco {
-    flex: 1;
-    max-width: 40%; 
-    padding: 1.3rem;
+    padding: 20px;
+    width: 30%;
 }
 
-form{
-    margin-top: 2rem;
-}
 
 form p > input{
     padding: 0.5rem;
@@ -96,8 +100,18 @@ form p > input{
 
 .preco{
     padding: 2rem;
+    box-shadow: rgba(241, 241, 241, 0.2) 0px 8px 24px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px; 
 }
 
-.preco p{
-    font-weight: 600;
+.preco h1{
+    font-size: 22px;
+    text-transform: uppercase ;
+}
+
+.contrato > div{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(241, 241, 241, 0.2) 0px 8px 24px;
 }

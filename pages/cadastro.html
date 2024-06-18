@@ -14,51 +14,67 @@
 
 <body>
     <div class="logo">
-        <img src="../assets/imgs/logo-black.png" alt="logo-black">
+        <a href="../index.html"><img src="../assets/imgs/logo-black.png" alt="logo-black"></a>
     </div>
-    <div class="d-flex">
-        <div class="form">
-            <h1>Cadastro</h1>
-            <form>
-                <p>
-                    <input type="text" name="nome" id="nome" placeholder="Nome*" required>
-                </p>
-                <p>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome*" required>
-                </p>
-                <p>
-                    <input type="date" name="datanasc" id="datanasc" placeholder="Data de nascimento*" required>
-                </p>
-                <p>
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF*" maxlength="14" required>
-                </p>
-                <p>
-                    <input type="email" name="email" id="email" placeholder="E-mail*" required>
-                </p>
-                <p>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone*" required>
-                </p>
-                <div class="genero">
-                    <p>Gênero</p>
-                    <label for="masculino">
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        Masculino
-                    </label>
-                    <label for="feminino">
-                        <input type="radio" id="feminino" name="genero" value="feminino">
-                        Feminino
-                    </label>
-                    <label for="outros">
-                        <input type="radio" id="outros" name="genero" value="outros">
-                        Outro
-                    </label>
+    <div class="fundo">
+        <div class="d-flex">
+            <div class="form">
+                <h1>Cadastro</h1>
+                <form>
+                    <p>
+                        <input type="text" name="nome" id="nome" placeholder="Nome*" required>
+                    </p>
+                    <p>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome*" required>
+                    </p>
+                    <p>
+                        <input type="date" name="datanasc" id="datanasc" placeholder="Data de nascimento*" required>
+                    </p>
+                    <p>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF*" maxlength="14" required>
+                    </p>
+                    <p>
+                        <input type="email" name="email" id="email" placeholder="E-mail*" required>
+                    </p>
+                    <p>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Telefone*" required>
+                    </p>
+                    <div class="genero">
+                        <p>Gênero</p>
+                        <label for="masculino">
+                            <input type="radio" id="masculino" name="genero" value="masculino">
+                            Masculino
+                        </label>
+                        <label for="feminino">
+                            <input type="radio" id="feminino" name="genero" value="feminino">
+                            Feminino
+                        </label>
+                        <label for="outros">
+                            <input type="radio" id="outros" name="genero" value="outros">
+                            Outro
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="preco">
+                <h1 id="planoEscolhido"></h1>
+                <div class="contrato">
+                    <div>
+                        <p>Contrato</p>
+                        <p>R$49,90</p>
+                    </div>
+                    <div>
+                        <p>Ma</p>
+                        <div>
+                            <p>R$49,90</p>
+                        </div>
+                    </div>
+                    <div></div>
                 </div>
-            </form>
-        </div>
-        <div class="preco">
-            <p id="planoEscolhido"></p>
+            </div>
         </div>
     </div>
+
     <script src="../assets/js/funcoes.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -72,8 +88,8 @@
         "black",
         "silver",
         "bronze"
-         ]; seria usado para calcular o preço , mas ja que e todos no primeiro mes e 49,90 nao a necessidade*/ 
-        
+         ]; seria usado para calcular o preço , mas ja que e todos no primeiro mes e 49,90 nao a necessidade*/
+
         let plano = getQueryParam('plano');
         document.getElementById('planoEscolhido').textContent = 'Plano selecionado: ' + plano;
     </script>
