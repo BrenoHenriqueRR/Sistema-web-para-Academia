@@ -20,7 +20,7 @@
         <div class="d-flex">
             <div class="form">
                 <h1>Cadastro</h1>
-                <form>
+                <form id="formcad">
                     <p>
                         <input type="text" name="nome" id="nome" placeholder="Nome*" required>
                     </p>
@@ -54,6 +54,7 @@
                             Outro
                         </label>
                     </div>
+                        <button type="submit" onclick="exibircomprovante()">Enviar</button>
                 </form>
             </div>
             <div class="preco">
@@ -69,7 +70,11 @@
                             <p><strong>R$29,90</strong></p>
                         </div>
                     </div>
-                    <!-- <div></div> -->
+                    <label for="cod">Codigo Promocional</label>
+                    <input type="text" name="cod" id="cod">
+                </div>
+                <div class="comprovante">
+                    <p id="comp-text"></p>
                 </div>
             </div>
         </div>

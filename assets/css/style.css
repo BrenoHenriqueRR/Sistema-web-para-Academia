@@ -150,6 +150,12 @@ header {
     z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+    #menu-lat.open-menu {
+        width: 70%;
+    }
+}
+
 #menu-lat.open-menu #logo {
     display: flex
 }
@@ -502,6 +508,7 @@ main h1 {
     .menu {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 1024px) {

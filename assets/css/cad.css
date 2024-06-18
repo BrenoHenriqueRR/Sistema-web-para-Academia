@@ -32,6 +32,7 @@
     border: 1px solid #f1f1f1; 
     border-radius: 10px; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
 }
 
 .form {
@@ -52,7 +53,8 @@
 .form input[type="text"],
 .form input[type="date"],
 .form input[type="email"],
-.form input[type="tel"] {
+.form input[type="tel"],
+#cod {
     width: 100%; 
     padding: 0.625rem; 
     margin: 0.3rem 0; 
@@ -60,6 +62,20 @@
     border-radius: 5px;
     box-sizing: border-box; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form button{
+    padding: 0.5rem 3rem;
+    border-radius:10px ;
+    border: none;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(226, 185, 0);
+    margin-top: 1rem;
+    position: absolute;
+    right: 6rem;
+    top: 25rem
 }
 
 .genero {
