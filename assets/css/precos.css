@@ -1,0 +1,111 @@
+.bg-precos {
+    position: relative;
+    text-align: center;
+    padding: 12rem 0;
+    background-color: black;
+    margin-bottom: 2rem;
+    color: white;
+    /* Para garantir que o texto fique visível */
+}
+
+.bg-precos .flex {
+    content: "";
+    background-image: url("../imgs/halter-gg.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.d-flexx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+.precos{
+    width: 60%;
+}
+
+
+.blackk{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.blackk div,
+.silverr div,
+.bronzee div{
+    display: flex;
+}
+
+.blackk div > p,
+.blackk div > h2,
+.silverr div > p,
+.silverr div > h2,
+.bronzee div > p,
+.bronzee div > h2{
+    margin-right: 4rem;
+}
+
+.silverr{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 2rem; 
+    margin-bottom: 4rem;  
+}
+
+.bronzee{
+    border: 1px solid brown;
+    border-radius: 15px;
+    padding: 2rem;   
+}
+
+.pagar{
+    padding: 3.5rem;
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.207);
+    height: 80vh;
+}
+
+.pagar div{
+    display: flex;
+}
+
+.pagar p{
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+.pagar h1{
+    font-size: 25px;
+    font-weight: 500;
+    border-bottom:1px solid rgba(128, 128, 128, 0.186) ;
+    margin-bottom: 2rem;
+}
+
+#cad-pag{
+    display: none;
+}
+
+#cad-pag.active{
+    display: inline;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    text-decoration: none;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+}

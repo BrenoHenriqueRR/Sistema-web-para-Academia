@@ -3,7 +3,7 @@ class Header extends HTMLElement {
         super();
     }
 
-    connectedCallback() {
+    connectedCallback() { // função própria do javascript que e chamado automaticamente pelo navegador
         fetch('../../includes/menu.html') // busca o conteúdo do arquivo menu.html 
         .then(response => response.text()) // converte a resposta em texto
         .then(html => {
