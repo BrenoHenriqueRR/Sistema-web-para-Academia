@@ -34,12 +34,21 @@
                 <input class="input-form" type="tel" id="telefone" name="telefone" required>
                 
                 <label for="cpf">CPF:</label>
-                <input class="input-form" type="text" id="cpf" name="cpf" required>
+                <input class="input-form" type="text" id="cpf" name="cpf" maxlength="14" required>
                 
                 <button type="submit" onclick="exibirForm();">Enviar</button>
             </div>
           </form>        
     </div>
      <footer-component></footer-component> 
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cpfInput = document.getElementById('cpf');
+
+            cpfInput.addEventListener('input', function(event) {
+                cpfInput.value = cpf(cpfInput.value);
+            });
+        });
+    </script>
 </body>
 </html>

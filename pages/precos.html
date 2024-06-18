@@ -75,7 +75,10 @@
                 <h3 id="pagar"></h3>
             </div>
             <h1>Filazação de Compra</h1>
-            <a class="cad-pag" id="cad-pag" href="cadastro.html">continuar pagamento</a>
+            <form id="planosForm" action="cadastro.html" method="GET">
+                <input type="hidden" id="planoSelecionado" name="plano" value="">
+                <a class="cad-pag" id="cad-pag" onclick="enviarPlano()">continuar pagamento</a>
+            </form>
         </div>
     </div>
     <footer-component></footer-component>
