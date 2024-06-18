@@ -208,6 +208,10 @@ main h1 {
 
 }
 
+.redes a{
+    color: white;
+}
+
 .planos {
     position: relative;
     max-width: 100%;
