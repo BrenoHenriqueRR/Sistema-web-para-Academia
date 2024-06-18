@@ -15,10 +15,61 @@
     width: 15rem;
 }
 
-.d-flex{
+
+.d-flex {
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 1.3rem;
+    gap: 1.3rem;
+
+}
+
+.form {
+    flex: 1;
+    max-width: 40%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form h1 {
+    text-align: center; 
+    margin-bottom:1.2rem;
+}
+
+.form p {
+    margin-bottom: 1rem;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="email"],
+.form input[type="tel"] {
+    width: 100%; 
+    padding: 0.625rem; 
+    margin: 0.3rem 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.genero {
+    margin-top: 1.3rem;
+}
+
+.genero p {
+    margin-bottom: 0.625rem;
+}
+
+.genero label {
+    margin-bottom: 0.5rem; 
+}
+
+.preco {
+    flex: 1;
+    max-width: 40%; 
+    padding: 1.3rem;
 }
 
 form{
@@ -41,4 +92,12 @@ form p > input{
 .genero label{
     font-size: 15px;
     margin-left: 1rem;
+}
+
+.preco{
+    padding: 2rem;
+}
+
+.preco p{
+    font-weight: 600;
 }

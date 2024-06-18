@@ -38,9 +38,6 @@
                 <p>
                     <input type="tel" name="telefone" id="telefone" placeholder="Telefone*" required>
                 </p>
-                <p>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone*" required>
-                </p>
                 <div class="genero">
                     <p>Gênero</p>
                     <label for="masculino">
@@ -71,11 +68,11 @@
                 cpfInput.value = cpf(cpfInput.value);
             });
         });
-        var check = [
+        /* var check = [
         "black",
         "silver",
         "bronze"
-        ];
+         ]; seria usado para calcular o preço , mas ja que e todos no primeiro mes e 49,90 nao a necessidade*/ 
         
         let plano = getQueryParam('plano');
         document.getElementById('planoEscolhido').textContent = 'Plano selecionado: ' + plano;
