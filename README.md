@@ -1,4 +1,4 @@
-# Projeto Smart Fitness
+# Projeto Fitness Prime
 
 Este projeto é uma página web inspirada no site da Smart Fit, desenvolvida utilizando HTML, CSS e JavaScript.
 
