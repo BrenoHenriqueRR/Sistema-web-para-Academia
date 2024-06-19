@@ -5,8 +5,11 @@ Este projeto é uma página web inspirada no site da Smart Fit, desenvolvida uti
 ## Funcionalidades
 
 - **Página Principal**: Apresenta informações sobre a academia, planos disponíveis e botões de ação.
-- **Formulário de Contato**: Permite aos usuários enviar mensagens para a equipe da academia.
+- **Formulário de Contato**: Permite aos usuários enviar um formulario (ainda nao implementado com banco de dados)
 - **Seção de Planos**: Detalha os planos de adesão disponíveis.
+- **Seção de Ativades**: Detalha as atividades que a academia fornece
+- **Seção de Espaços**: Detalha os espaços disponíveis.
+- **Seção de Promoção**: Exibe um formulário para o cliente ganhar um desconto , mas somente visualmente.
 
 ## Como Usar
 
@@ -33,5 +36,5 @@ Para sugestões de novas funcionalidades, por favor, abra uma nova issue para di
 
 ## Autor
 
-- Seu Nome
-- GitHub: [seu-usuario](https://github.com/seu-usuario)
+- Breno Henrique
+- GitHub: [seu-usuario](https://github.com/BrenoHenriqueRR)
