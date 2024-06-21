@@ -219,6 +219,10 @@ main h1 {
 
 }
 
+.planos-mobile{
+    display: none;
+}
+
 .planos h1 {
     text-align: center;
 }
@@ -518,6 +522,17 @@ main h1 {
 @media screen and (max-width: 1024px) {
     .att-grid, .att-flex {
         grid-template-columns: repeat(2, 300px)
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .ul-planos{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 647px) {
+    header{
+        
     }
 }
 
