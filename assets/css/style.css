@@ -219,9 +219,6 @@ main h1 {
 
 }
 
-.planos-mobile{
-    display: none;
-}
 
 .planos h1 {
     text-align: center;
@@ -434,7 +431,6 @@ main h1 {
 
 .app-text li {
     margin-top: 0.5rem;
-    margin-left: 1rem;
     font-size: 15px;
 }
 
@@ -445,7 +441,9 @@ main h1 {
 }
 
 .img-app {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -505,6 +503,10 @@ main h1 {
     z-index: 2;
 }
 
+#planos-mobile{
+    display: none;
+}
+
 
 @media screen and (max-width: 1238px) {
     .att-grid,.att-flex {
@@ -540,5 +542,45 @@ main h1 {
 @media screen and (max-width: 562px) {
     .att-grid, .att-flex {
         grid-template-columns: repeat(1, 400px);
+    }
+
+    #planos-mobile{
+        display: block;
+    }
+
+    #planos{
+        display : none;
+    }
+
+    .ul-planos{
+        justify-content: start;
+        font-size: 20px;
+        text-align: left;
+    }
+
+     .btn-planos a{
+        font-size: 15px;
+    }
+
+    .content-planos{
+        margin-top: 1rem;
+        
+    }
+
+    .border-black {
+        border: 1px solid #333;
+    }
+
+    .black-vantagem{
+        top: 0rem;
+        left: 8%;
+    }
+
+    #aplicativo{
+        display: block;
+    }
+
+    .img-app img{
+        width: 20rem
     }
 }
